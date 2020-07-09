@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded',()=>{
 /*开始计时*/console.time('ＪＳ处理耗时');console.time('文件加载耗时');
-/*頁始付字*/beforeDoc.innerHTML='<div id=loadinger>少女祈祷中</div><details><summary id=foo></summary></details><div id=foom><p><div>在処 <small class=td-s1>〜'+location.pathname+'</small></div><hr><div class=flex-row style=justify-content:flex-start><div id=lbar style="border-left:.2em solid var(--c3);padding-left:.5em"></div><div style="margin:.5em 1em"><div td=db>表現の程度<input id=fS type=range min=50 max=200 value=100 onchange=fS(this.value)><span id=fSV>100</span></div><br><button id=unAsider onclick=unAside()>unAside</button></div></div><hr><nav class=tw-r><i class=ic-home></i>&nbsp;<a href=../main/!_map class=td-btn>Home</a>&nbsp;|&nbsp;<i class=ic-merge></i>&nbsp;<a href=https://github.com/kanmurimori/kanmurimori.github.io class=td-btn>Edit</a>&nbsp;|&nbsp;<a id=knighter onclick=knight()><i class=ic-theme></i>&nbsp;Theme</a>&nbsp;|&nbsp;<i class=ic-detour></i>&nbsp;<a href=#>Top</a></nav></p></div><header><i class=hring onclick=history.go(-1)><i class=ic-back></i></i> '+document.getElementsByTagName('title')[0].textContent+afterHt.innerHTML+'</header>';
+/*頁始付字*/beforeDoc.innerHTML='<div id=loadinger>少女祈祷中</div><details><summary id=foo></summary></details><div id=foom><p><div>在処 <small class=td-s1>〜'+location.pathname+'</small></div><hr><div class=flex-row style=justify-content:flex-start><div id=lbar style="border-left:.2em solid var(--c3);padding-left:.5em"></div><div style="margin:.5em 1em"><div td=db>表現の程度<input id=fS type=range min=50 max=200 value=100 onchange=fS(this.value)><span id=fSV>100</span></div><br><button id=unAsider onclick=unAside()>unAside</button></div></div><hr><nav class=tw-r><i class=ic-home></i>&nbsp;<a href=../main/!_map class=td-btn>Home</a>&nbsp;|&nbsp;<i class=ic-merge></i>&nbsp;<a href=https://github.com/kanmurimori/kanmurimori.github.io class=td-btn>Edit</a>&nbsp;|&nbsp;<a id=knighter onclick=knight()><i class=ic-theme></i>&nbsp;Theme</a>&nbsp;|&nbsp;<i class=ic-detour></i>&nbsp;<a href=#>Top</a></nav></p></div><header><i class=hring onclick=javascript:history.go(-1)><i class=ic-back></i></i> '+document.getElementsByTagName('title')[0].textContent+afterHt.innerHTML+'</header>';
 /*頁末付字*/afterDoc.innerHTML='<div style="text-align:right;font-size:70%;padding:0 .5em 1em 0">全部原作知識内容皆CC BY-NC 4.0</div><div style=padding-bottom:1.5em><i class=ic-cc></i> 2020 <a href=https://t.me/ky4kayezu>ky</a> & Hosted on <a href=https://github.com><i class=ic-github></i><b class="tf-sm"><small>GitHubPage</small></b></a></div>';
 try{document.getElementsByClassName('tagMes')[0].innerHTML='<div style=padding-left:5em><fieldset class=b-td><legend class=td-b1>見符「ゆっくりしていってね！」</legend></fieldset>①[注意]錯誤主観缺省等諸問題存在。<br>②[免責]内容造成後果不負責。<br>③[支持]排版異常縮字横屏Chrome更新下。<br>④[版権]CC(此作已共享)BY(借物請列表)NC(請勿於商用)。<br><em>○以上事(↑)＆編者(ky)認同不能者請快関閉這個頁面！<em></div>'}catch{};
 try{document.getElementsByClassName('tagLod')[0].innerHTML='<div style=padding-left:5em><fieldset class=b-td style=border-color:#f9a825><legend class=td-b1 style=color:#f57f17>坑符「少女折寿中」</legend></fieldset>需長時間編集或一時編集終止中、或許有一天会填完。</div>'}catch{};
@@ -27,11 +27,6 @@ try{document.getElementsByClassName('tagUni')[0].innerHTML='<div style=padding-l
 /*載前计时*/console.timeEnd('ＪＳ处理耗时')})
 
 window.onload=()=>{
-
-
-if(i=0){
-dkr.style.borderWidth="5px"
-}
 
 /*
 fetch('https://api.github.com/repos/kanmurimori/kanmurimori.github.io')
