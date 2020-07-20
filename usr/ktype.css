@@ -45,15 +45,18 @@ hr[style]{margin:.1em 0}
 .b-tl{border-top:.1em transparent solid;border-image:linear-gradient(to right,var(--c3),transparent)1 10}
 .b-ls{padding:0 .5em;border-left:.2em solid var(--c3);margin-left:.2em}
 /*.b-tx{border-top-style:hidden}.b-lx{border-left-style:hidden}.b-bx{border-bottom-style:hidden}.b-rx{border-right-style:hidden}*/
+
 ins{text-decoration:underline solid;text-decoration-skip-ink:none}
 del{text-decoration:line-through solid}
 [td*=stroke]{-webkit-text-fill-color:transparent;-webkit-text-stroke:1px var(--tc)}
 .lock{color:var(--tc);background:var(--tc);transition:color .3s}.td-lock:hover{color:var(--bc)}
 .bge{color:#fff;border-radius:.1em;padding:0 .2em;margin:0 .1em;background:var(--c3)}
+.ng{color:#fff;border-radius:.1em;padding:0 .2em;margin:0 .1em;background:#F44336}.ng:before{content:'NG'}
+.ok{color:#fff;border-radius:.1em;padding:0 .2em;margin:0 .1em;background:#64DD17}.ok:before{content:'OK'}
 [td*=db]{white-space:nowrap;word-break:keep-all}
 .eg{border-left:.2em dotted var(--c3);padding-left:1em;position:relative;margin:.3em 0 .3em .8em}
 .eg:before{content:'e.g.';font-family:times;font-style:italic;background:var(--c3);padding:0 1px 0 2px;border-radius:2px;position:absolute;left:-.9em;color:#fff}
-big{font-size:larger}small{font-size:smaller}
+big{font-size:larger}small,.note{font-size:smaller}
 a{color:var(--c5);text-decoration-color:transparent;transition:text-decoration-color .5s;outline:initial}
 a:not(.td-btn):focus{text-decoration-color:var(--c5)}
 a:not(.td-btn):visited{color:var(--c4)}
@@ -64,8 +67,9 @@ u{color:#888;text-decoration:initial}
 abbr{color:#999;font-size:80%}
 dfn{font-weight:bold;font-style:normal;text-shadow:0 0 4px var(--sc);color:var(--c6)}
 bdi,.tw-v{writing-mode:vertical-rl}
-sup{vertical-align:baseline;position:relative;font-size:70%;top:-.6em}
-sub{vertical-align:baseline;position:relative;font-size:70%;bottom:-.2em}
+sup{vertical-align:baseline;position:relative;line-height:0;font-size:70%;top:-.5em}
+sub{vertical-align:baseline;position:relative;line-height:0;font-size:70%;bottom:-.2em}
+
 kbd{padding:0 5px;background:var(--c3);border-radius:2px;color:#fff}
 mark{color:inherit;background:linear-gradient(to top,yellow .4em,transparent 0)}
 .bk{border:solid var(--c3)}
@@ -83,7 +87,7 @@ dd{margin-left:1em}
 dt{display:table-cell;white-space:nowrap}
 samp,.tf-sm{font-family:serif-monospace,courier,kosugi}
 tt,.tf-tm{font-family:times,kosugi;line-height:1em}
-button{font-family:initial;border:2px outset var(--c2);background:var(--c1);color:var(--c5);padding:0 .5em;outline:none}
+button{font-size:1em;font-family:inherit;border:2px outset var(--c2);xborder-radius:5px;background:transparent;color:var(--c5);padding:0 .2em;outline:none}
 button:active{border-style:inset;background:var(--c2);color:var(--c6)}
 header{font-size:150%;background:var(--c2);border-radius:0 0 2px 2px;padding:.2em 0 .3em .3em;box-shadow:2px 4px 9px var(--sc)}
 footer{padding:.2em 0;background:var(--c2);border-top:1px solid var(--c3);line-height:.5em;text-align:center}
@@ -91,6 +95,9 @@ table{table-layout:fixed;border:.15em solid var(--c3);border-collapse:collapse;m
 th,td{padding:.2em;text-align:center;word-break:keep-all;white-space:nowrap;border:.1em solid var(--c4)}
 th{font-weight:bold;color:var(--c3)}
 caption{caption-side:bottom;font-size:90%;padding-top:.2em;margin-bottom:0;color:#888}
+.tp{float:left;margin-right:.6em}
+.tpp{clear:both}
+
 [q],[p]{display:inline-block;color:var(--c3);vertical-align:baseline;position:relative;font-size:65%;top:-.5em;transition:all .4s;quotes:'['']'}
 [q]:hover,[p]:hover{font-weight:bold;color:var(--c5);transform:rotate(360deg)}
 [p]{color:#999}[p]:hover{color:#666}
@@ -124,13 +131,14 @@ summary:after{content:'[開ける]';color:var(--c4);font-weight:bold;float:right
 .d2:before{content:'';height:.2em;display:block}
 [open]+.d1 .d2{display:block;max-height:100em}
 
-
+summary h1{display:inline}
+//.d3 [open]{background:}
 
 .flex-row{display:flex;flex-flow:wrap;justify-content:space-evenly}
 .flex-col{display:flex;flex-flow:column wrap}
 
 
-.tw-l,.tw-lth th,.tw-ltd td{text-align:left}
+.tw-l,.tw-lth th,.tdwl td{text-align:left}
 .tw-r,.tw-rth th,.tw-rtd td{text-align:right}
 .tw-c{text-align:center}
 
