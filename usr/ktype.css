@@ -9,7 +9,7 @@
 //[contenteditable]{user-select:none;outline:0}
 //[contenteditable]:hover{border:2px dotted var(--c5);color:var(--c4)}
 html{scroll-behavior:smooth}
-body{color:var(--tc);background:var(--bc);font-family:kosugi;word-wrap:break-word;word-break:break-all;margin:initial;position:relative;counter-reset:h1 h2 h3;-webkit-tap-highlight-color:rgba(245,150,170,.3)}
+body{color:var(--tc);background:var(--bc);font-family:kosugi;word-wrap:break-word;word-break:break-all;margin:initial;position:relative;counter-reset:h1 h2 h3;text-align:justify;text-justify:inter-cluster;-webkit-tap-highlight-color:rgba(245,150,170,.3)}
 @font-face{font-family:kosugi;src:url('kosugi.woff2');unicode-range:u+20-7e,u+a7,u+b6,u+391-3c9,u+2015,u+2026,u+203b,u+2160-216b,u+2190-2193,u+21d2,u+21d4,u+2200,u+2203,u+2252,u+2286,u+2460-2473,u+2500-254b,u+25b3,u+25c7,u+25cb,u+25cf,u+2606,u+3000-3015,u+301c,u+3041-3093,u+309b-309e,u+30a1-30f7,u+30fb-30fe,u+3300-3357,u+337b-337f,u+4e00-9fff,u+ff00-ff9f}
 #container{box-sizing:border-box;padding:.5em;margin:0 .5em;border-left:.2em dashed var(--c3);border-right:.2em dashed var(--c3)}
 .unas main{display:inherit}
@@ -35,7 +35,7 @@ h2:before{counter-increment:h2;content:'¶'counter(h1)'.'counter(h2)'.';margin-l
 h3:before{counter-increment:h3;content:counter(h1)'.'counter(h2)'.'counter(h3)'.'}
 :-webkit-any(h1,h2,h3):hover a:before{content:' ＃'}
 article{margin-left:1em}
-p{line-height:1.4em;column-rule:var(--c3) dotted .2em;margin:.5em 0;text-align:justify;text-justify:inter-cluster}
+p{line-height:1.4em;column-rule:var(--c3) dotted .2em;margin:.5em 0}
 hr{margin:.2em auto;border:0;border-top:.1em solid var(--c3)}
 hr[style]{margin:.1em 0}
 [class|=b]{border:.15em none var(--c3);border-radius:0;padding:0}
@@ -82,9 +82,9 @@ pre{overflow-x:scroll;overflow-scrolling:touch;padding:1px 0;margin:0;font-famil
 [code]:hover:after{content:attr(code);position:absolute;right:0;top:0;background:var(--c3);padding-left:.2em}
 ol,ul{margin:.2em 0}
 ol{list-style-type:katakana}
-dl{display:table;margin:.1em 0}
-dd{margin-left:1em}
-dt{display:table-cell;white-space:nowrap}
+dl{display:table;margin:.2em 0}
+dt{display:table-cell;white-space:nowrap;padding-right:.5em;border-right:.2em solid var(--c3)}
+dd{margin-left:.5em}
 samp,.tf-sm{font-family:serif-monospace,courier,kosugi}
 tt,.tf-tm{font-family:times,kosugi;line-height:1em}
 button{font-size:1em;font-family:inherit;border:2px outset var(--c2);xborder-radius:5px;background:transparent;color:var(--c5);padding:0 .2em;outline:none}
