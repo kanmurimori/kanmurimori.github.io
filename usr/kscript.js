@@ -31,7 +31,12 @@ getE('[q]').forEach(e=>{e.onclick=()=>{f=getEI('qD'+e.getAttribute('q')),f.showM
 /*載錯処理*///try{[].forEach.call(document.images,function(ie){ie.onerror=function(){ie.src='../usr/ie.svg';ie.classList.add('ie');iet=document.createElement('em');iet.innerText=' 〜届かないもの[LOAD ERROR]';ie.parentNode.insertBefore(iet,ie.nextSibling)}})}catch{};	
 /*創建関閉*///try{for(i=1;i<20;i++){[].forEach.call(document.querySelectorAll('#q'+i),function(qd){let qe=document.createElement('a');qe.innerText='Ｘ';qe.setAttribute('onclick','q'+i+'.close()')})}}catch{};	
 console.timeEnd('js');
+var interval = setInterval(function() {
+if(document.readyState == 'complete') {
+        clearInterval(interval);
 setTimeout("loadinger.style.opacity='0',loadinger.textContent='少女祈祷済',ldt.style.display='none'",500);setTimeout("loadinger.style.display='none'",2000);
+    }    
+}, 100);
 });
 /*
 onload=()=>{
