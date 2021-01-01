@@ -19,7 +19,7 @@ try{getEC('tagMes')[0].innerHTML='<div style=padding-left:5em><div class=hrda><b
 //try{getEC('tagUni')[0].innerHTML=`<div style=padding-left:5em><fieldset class=b-td style=border-color:#0091ea><legend class=td-b1 style=color:#0091ea>火星「届不到的絵恋」</legend></fieldset>本頁含有專門的字符不会被日常区塊範囲的字体映照、出現的「⺚」皆為汝設備無対応絵制方法的替代絵制方法。</div>`}catch{};
 
 try{[] .slice.call(document.images).forEach(e=>{e.setAttribute('loading','lazy')})}catch{};
-[].slice.call(document.links).forEach(e=>{e.target=e.getAttribute('href')});
+//[].slice.call(document.links).forEach(e=>{e.target=e.getAttribute('href')});
 try{for(e=getET('section'),i=e.length;i>0;i--){e[i-1].id='s'+i}}catch{};
 try{for(e=getET('h1'),i=e.length;i>0;i--){e[i-1].id='h1'+i}}catch{};
 try{for(e=getEC('t2'),i=e.length;i>0;i--){e[i-1].id='h2'+i}}catch{};
