@@ -183,7 +183,7 @@ summary:before{content:'[Ｏ]';color:var(--c4);font-weight:bold;position:absolut
 .ss2{color:var(--bc);background:var(--c3);padding:.1em .1em 0 .1em}
 [open] summary:before{content:'[Ｘ]';color:red}
 .t2+article{display:none}
-details+div{padding:0 .5em;position:absolute;background:var(--bc);margin-right:1em;border:.1em solid var(--c3);overflow:hidden;max-height:0;transition:max-height .5s}
+details+div{padding:0 .5em;background:var(--bc);border:.1em solid var(--c3);overflow:hidden;max-height:0;transition:max-height .5s}
 [open]+article{display:block}
 [open]+div{max-height:100em;z-index:1;}
 .t2:hover:after{content:'＃'attr(id);position:absolute;right:3em;top:.4em;color:var(--c4)}

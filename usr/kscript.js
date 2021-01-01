@@ -51,7 +51,6 @@ onload=()=>{
 		getE('h1+p,.t2+article').forEach(h=>{iO.observe(h)});
 }
 
-
 function kN(){document.body.classList.contains('kN')?(document.body.classList.remove('kN'),kNi.className='ic-suns'):(document.body.classList.add('kN'),kNi.className='ic-moon')}
 function lB(){lba.hasAttribute('style')?(lba.removeAttribute('style'),lBi.className='ic-lis1'):(lba.style='display:none',lBi.className='ic-lis0')}
 function fB(){document.body.classList.contains('tf-mt')?(document.body.classList.remove('tf-mt'),fb.innerHTML='<i class=ic-font></i> MTLmr3m'):(document.body.classList.add('tf-mt'),fb.innerHTML='<i class=ic-font></i> Initial')}
