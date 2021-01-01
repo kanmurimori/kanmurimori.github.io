@@ -33,7 +33,7 @@ getE('[q]').forEach(e=>{e.onclick=()=>{f=getEI('qD'+e.getAttribute('q')),f.showM
 console.timeEnd('js');
 setTimeout("loadinger.style.opacity='0',loadinger.textContent='少女祈祷済',ldt.style.display='none'",500);setTimeout("loadinger.style.display='none'",2000);
 });
-
+/*
 onload=()=>{
 	try{iB=document.createElement('div'),
 		screen.width<1e3?(lba.appendChild(iB)):abar.appendChild(iB),
@@ -50,6 +50,7 @@ onload=()=>{
 	iO=new IntersectionObserver(f=>{f.forEach(e=>{e.isIntersecting?getEI('i'+e.target.previousSibling.id).classList.add('iOing'):getEI('i'+e.target.previousSibling.id).classList.remove('iOing')})});
 		getE('h1+p,.t2+article').forEach(h=>{iO.observe(h)});
 }
+*/
 
 function kN(){document.body.classList.contains('kN')?(document.body.classList.remove('kN'),kNi.className='ic-suns'):(document.body.classList.add('kN'),kNi.className='ic-moon')}
 function lB(){lba.hasAttribute('style')?(lba.removeAttribute('style'),lBi.className='ic-lis1'):(lba.style='display:none',lBi.className='ic-lis0')}
