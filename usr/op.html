@@ -1,0 +1,28 @@
+<div id=loader>少女祈祷中</div><div class="night-b"></div>
+<div id=title style="line-height:1em;padding:.4em 0 .1em 1em;font-size:230%;border-bottom:solid .1em"></div>
+<main style=user-select:none><samp>
+<div id=tw0 style=margin-bottom:.1em>
+    <svg id=urlBar style=transform:translateY(5px);margin-right:.4em height=1.2em viewBox='0 0 24 24'><path d='M15 20c0-.55-.45-1-1-1h-1v-2h6c1.11 0 2-.89 2-2V7a2 2 0 0 0-2-2h-6l-2-2H5c-1.1 0-2 .9-2 2v10a2 2 0 0 0 2 2h6v2h-1c-.55 0-1 .45-1 1H2v2h7c0 .55.45 1 1 1h4c.55 0 1-.45 1-1h7v-2h-7M5 15V7h14v8H5z'/></svg>
+<span style=float:right>
+    <input type=range min=50 max=150 value=100 onchange=document.body.style.zoom=this.value+'%' oninput=this.nextSibling.textContent=this.value> <tt id=zoomValue style=width:2em;display:inline-block>100</tt>
+    <span>｜</span>
+    <svg onclick=tT() id=ttb style=transform:translateY(5px) height=1.2em viewBox='0 0 24 24'><path d='M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5l1.43 1.43L4.93 20.5 3.5 19.07 19.07 3.5m-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13.51 1.67m-3.3 3.61l-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87.4 1.31M19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58l2.77-1.15-.24 3.35-2.53-2.2m4.33-2.7l1.15-2.77 2.2 2.54-3.35.23m1.15-4.96l-1.14-2.78 3.34.24-2.2 2.54M9.63 18.93l2.77 1.15-2.53 2.19-.24-3.34z'/></svg>
+</span>
+</div><div id=tw1>
+    <svg id=syncTime style=transform:translateY(3px);margin-right:.4em height=1.2em viewBox='0 0 24 24'><path d='M4 2a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h8.41A7 7 0 0 0 16 23a7 7 0 0 0 7-7 7 7 0 0 0-5-6.7V8l-6-6H4m0 2h7v5h5a7 7 0 0 0-7 7 7 7 0 0 0 1.26 4H4V4m12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m-1 1v5l3.61 2.16.75-1.22-2.86-1.69V12H15z'/></svg>
+    <span>｜</span>
+    <svg id=textLength style=transform:translateY(4px);margin-right:.4em height=1.3em viewBox='0 0 24 24'><path d='M11 4v2H4v4h2V8h12v2h2V6h-7V4m-5 6v2h5.59l-2 2H4v2h7v2h-1v2h3v-4h7v-2h-5.79L16 12.21V10z'/></svg>
+    <span>｜</span>
+    <svg style=transform:translateY(5px);margin-right:.4em height=1.2em viewBox='0 0 24 24'><path d='M17 8h3v12h1v1h-4v-1h1v-3h-4l-1.5 3H14v1h-4v-1h1l6-12m1 1l-3.5 7H18V9M5 3h5c1.11 0 2 .89 2 2v11H9v-5H6v5H3V5c0-1.11.89-2 2-2m1 2v4h3V5H6z'/></svg><input id=ffi type=text placeholder=MTLmr3m oninput="document.body.style.fontFamily=this.value,localStorage.ff=this.value">
+</div>
+
+</samp><script>
+    document.body.offsetHeight>3e3&&(e=document.createElement('div'),e.classList.add('indicator'),document.body.append(e));
+    t=getET('title')[0].textContent,title.innerHTML=t,getET('title')[0].textContent=t.replace(/<.+?>/g,'');
+    m=location.pathname,n=m.length,n>17?urlBar.after('…'+m.substring(n-17)):urlBar.after(m);
+    textLength.after(getET('main')[1].textContent.replace(/(\s|[\r\n])/g,'').length);
+    syncTime.after(getET('title')[0].getAttribute('time'));
+    ffi.value=localStorage.ff;
+    for(i=100;tw1.clientHeight-tw0.clientHeight>10;document.body.style='zoom:'+(i--)+'%'){zoomValue.textContent=i};
+    m=setInterval(x=>(document.readyState=='complete'&&(clearInterval(m),loader.textContent=loader.textContent.replace('中','済'),loader.style.opacity='0',o=setTimeout("loader.style.display='none',clearTimeout(n),clearTimeout(o)",999)),500));
+</script></main>
