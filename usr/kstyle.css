@@ -31,7 +31,7 @@ a:hover{color:var(--cm);text-decoration-color:var(--cm)}
 s{display:inline-block;text-decoration:initial }
 big{font-size:xx-large}
 small{font-size:small}
-em{color:red;font-weight:bold;font-style:italic}
+em{color:red;font-weight:bold;font-style:normal}
 tt{font-family:times,MTLmr3m;line-height:1em}
 dfn{font-weight:bold;font-style:normal}
 dfn i{font-family:times}
@@ -64,6 +64,7 @@ li{line-height:1.1em;margin:.1em 0}
 dl{display:table;margin:0}
 dt{display:table-cell;white-space:nowrap;padding-right:.5em;border-right:.2em solid var(--c3)}
 dd{margin-left:.5em}
+tt,.ts{font-family:times}
 figure{overflow:scroll;margin:0;}
 table{table-layout:fixed;border:.15em solid var(--cm);border-collapse:collapse}
 th,td{padding:.2em .2em .1em .2em;text-align:center;word-break:keep-all;white-space:nowrap;border:.1em solid var(--cm);line-height:1.2em}
